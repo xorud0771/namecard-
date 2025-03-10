@@ -28,7 +28,7 @@ while True:
         if len(cards) == 0:
             print("\n저장된 명함이 없습니다.\n")
             continue  # 다시 메뉴로 돌아감
-
+        
         print("\n[ 명함 수정 ]")
         i = 0
         while i < len(cards):
