@@ -46,6 +46,8 @@ while True:
         named = input("수정할 명함의 이메일을 입력해주세요: ")
         check = 0
         for index in range(len(cards)):
+        # for index, card in enumerate(cards): (이것도 가능/ 결과값: (인덱스값, 실제값))
+            # if card[3] == email:
             if cards[index][3] == email:
                 check = 1
                 while True:
