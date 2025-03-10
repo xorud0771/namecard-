@@ -21,14 +21,13 @@ while True :
         phone = input("전화번호: ")
         belong = input("소속 : ")
 
-
         card = [name, phone, email, belong]
         business_card.append(card)
         print(f"{name}님의 명함이 입력되었습니다.")
         print(business_card)
     elif menu == '2':
         print('명함수정')
-        Q1 = input('수정할 명함이 있습니까? (Y / N)')
+        Q1 = input('수정할 명함이 있습니까? (Y / N) ')
         if Q1 == 'Y' :
             name = input("수정할 사람의 이름을 입력하시오.")
             if name in business_card :
