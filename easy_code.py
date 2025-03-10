@@ -33,6 +33,7 @@ while True:
         phone = input("전화번호: ")
         belong = input("소속: ")
 
+<<<<<<< HEAD
         # 입력받은 정보를 리스트 형태로 저장
         card = [name, email, phone, belong]  # 명함 정보 리스트
         business_card.append(card)  # 명함 목록(business_card)에 추가
@@ -62,6 +63,23 @@ while True:
                         business_card[index][item-1] = input("수정할 값을 입력 >>> ")
 
     # 3번 선택: 명함 삭제
+=======
+        card = [name, phone, email, belong]
+        business_card.append(card)
+        print(f"{name}님의 명함이 입력되었습니다.")
+        print(business_card)
+    elif menu == '2':
+        print('명함수정')
+        Q1 = input('수정할 명함이 있습니까? (Y / N) ')
+        if Q1 == 'Y' :
+            name = input("수정할 사람의 이름을 입력하시오.")
+            if name in business_card :
+                business_card[1] = input('새 이메일 :')
+                business_card[2] = input('새 전화번호 :')
+                business_card[3] = input('새 소속 :')
+                print(f"'{name}'님의 명함이 수정되었습니다.")
+            else : print("해당 이름의 명함을 찾을 수 없습니다.")
+>>>>>>> 60840454d87a57849806738edcd91fc4e91d69fa
     elif menu == '3':
         print('명함 삭제')
         remove = input('삭제할 명함의 이름을 입력하세요: ')  # 삭제할 명함 이름 입력받기
